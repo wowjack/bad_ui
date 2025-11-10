@@ -2,9 +2,8 @@
 // this is a hacky way to make sure clicking on an item inside the dropdown doesn't close the entire dropdown
 
 $(() => {
-  // Handle all nested dropdown toggles
+// Handle all nested dropdown toggles
   $('.nested-dropdown-toggle').on('click', function(e) {
-
     e.preventDefault();
     e.stopPropagation();
     
@@ -18,9 +17,24 @@ $(() => {
       return;
     }
     
+    // Close sibling dropdowns at the same level
+    $(this).closest('ul').find('> li > .nested-dropdown-menu.show').removeClass('show');
+    
     // Open this dropdown
     $submenu.addClass('show');
   });
+  
+  // Prevent closing parent dropdown when clicking inside nested dropdowns
+  $('.nested-dropdown-menu').on('click', function(e) {
+    e.stopPropagation();
+  });
+  
+  // Close all nested dropdowns when parent closes
+  $('#navbarDropdownMenu').on('hidden.bs.dropdown', function() {
+    $('.nested-dropdown-menu').removeClass('show');
+  });
+
+  
 
   // Handle the search form
   $('#search-form').on('submit', function(e) {
