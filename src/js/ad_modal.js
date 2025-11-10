@@ -55,6 +55,8 @@ const modalAdLinks = [
 
 
 $(() => {
+
+  let adModalInstance = null;
   
   // Function to get random ad
   function getRandomAd() {
@@ -66,7 +68,10 @@ $(() => {
     const randomAd = getRandomAd();
     $('#modal-ad-image').attr('src', randomAd);
     
-    adModalInstance = new bootstrap.Modal($('#adModal'));
+    if(!adModalInstance) {
+      adModalInstance = new bootstrap.Modal($('#adModal'));
+    }
+
     adModalInstance.show();
   }
   
