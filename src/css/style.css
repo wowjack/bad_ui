@@ -49,3 +49,8 @@ body {
     background-color: #f8f9fa;
     text-align: right;
 }
+
+#view-product-button {
+    width: fit-content;
+    font-size: 50%;
+}
