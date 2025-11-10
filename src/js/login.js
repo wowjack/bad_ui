@@ -9,6 +9,6 @@ $(() => {
     e.preventDefault();
     $("#login-modal-username").text($("#login-username-input").val())
     show_modal();
-    setTimeout(() => window.location.href = "/index", 5000);
+    setTimeout(() => window.location.href = "/bad_ui/index", 5000);
   });
 })

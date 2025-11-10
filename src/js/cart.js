@@ -28,7 +28,7 @@ export function renderProducts(products) {
             <h6 class="card-title">${p.title}</h6>
             <p class="text-muted mb-1">$${p.price}</p>
             <p class="small flex-grow-1">${p.description.substring(0, 60)}...</p>
-            <a href="/products/product/?id=${p.id}" class="btn btn-outline-primary mt-auto">View</a>
+            <a href="{{/products/product/?id=${p.id} | url}}" class="btn btn-outline-primary mt-auto">View</a>
           </div>
         </div>
       </div>

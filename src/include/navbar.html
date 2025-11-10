@@ -6,7 +6,7 @@ at dummyjson.com/products/categories and automatically populate the categories a
 
 <nav class="navbar navbar-light sticky-top mb-4">
   <div class="container d-flex justify-content-between align-items-center">
-    <a class="navbar-brand" href="/">Jack's Bargains</a>
+    <a class="navbar-brand" href="{{ '/' | url }}">Jack's Bargains</a>
     <!-- Burger as dropdown toggle -->
     <div class="dropdown">
       <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="navbarDropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
@@ -14,7 +14,7 @@ at dummyjson.com/products/categories and automatically populate the categories a
       </a>
       <!-- Dropdown menu -->
       <ul class="dropdown-menu dropdown-menu-end p-3 shadow" aria-labelledby="navbarDropdownMenu" style="min-width: 250px;">
-        <li><a class="dropdown-item" href="/">Home</a></li>
+        <li><a class="dropdown-item" href="{{ '/' | url }}">Home</a></li>
         
         <!-- Nested dropdown for Shop with deeper nesting -->
         <li class="dropdown dropend position-relative">
@@ -22,7 +22,7 @@ at dummyjson.com/products/categories and automatically populate the categories a
             Shop
           </a>
           <ul class="dropdown-menu shadow nested-dropdown-menu" id="shopDropdownMenu" style="min-width: 200px;">
-            <li><a class="dropdown-item" href="/products">All Products</a></li>
+            <li><a class="dropdown-item" href="{{ '/products' | url }}">All Products</a></li>
             <li><hr class="dropdown-divider"></li>
             
             <!-- By Price with sub-options -->
@@ -31,17 +31,17 @@ at dummyjson.com/products/categories and automatically populate the categories a
                 By Price
               </a>
               <ul class="dropdown-menu shadow nested-dropdown-menu" id="byPriceDropdownMenu" style="min-width: 180px;">
-                <li><a class="dropdown-item" href="/products">Under $10</a></li>
-                <li><a class="dropdown-item" href="/products">$10 - $50</a></li>
-                <li><a class="dropdown-item" href="/products">$50 - $100</a></li>
-                <li><a class="dropdown-item" href="/products">$100 - $500</a></li>
-                <li><a class="dropdown-item" href="/products">Over $500</a></li>
+                <li><a class="dropdown-item" href="{{ '/products' | url }}">Under $10</a></li>
+                <li><a class="dropdown-item" href="{{ '/products' | url }}">$10 - $50</a></li>
+                <li><a class="dropdown-item" href="{{ '/products' | url }}">$50 - $100</a></li>
+                <li><a class="dropdown-item" href="{{ '/products' | url }}">$100 - $500</a></li>
+                <li><a class="dropdown-item" href="{{ '/products' | url }}">Over $500</a></li>
               </ul>
             </li>
             
-            <li><a class="dropdown-item" href="/products">Best Sellers</a></li>
-            <li><a class="dropdown-item" href="/products">New Arrivals</a></li>
-            <li><a class="dropdown-item" href="/products">Sale Items</a></li>
+            <li><a class="dropdown-item" href="{{ '/products' | url }}">Best Sellers</a></li>
+            <li><a class="dropdown-item" href="{{ '/products' | url }}">New Arrivals</a></li>
+            <li><a class="dropdown-item" href="{{ '/products' | url }}">Sale Items</a></li>
           </ul>
         </li>
         
@@ -58,9 +58,9 @@ at dummyjson.com/products/categories and automatically populate the categories a
                 Beauty & Personal Care
               </a>
               <ul class="dropdown-menu shadow nested-dropdown-menu" id="beautyDropdownMenu" style="min-width: 180px;">
-                <li><a class="dropdown-item" href="/products/category/?category=beauty">Beauty</a></li>
-                <li><a class="dropdown-item" href="/products/category/?category=fragrances">Fragrances</a></li>
-                <li><a class="dropdown-item" href="/products/category/?category=skin-care">Skin Care</a></li>
+                <li><a class="dropdown-item" href="{{ '/products/category/?category=beauty' | url }}">Beauty</a></li>
+                <li><a class="dropdown-item" href="{{ '/products/category/?category=fragrances' | url }}">Fragrances</a></li>
+                <li><a class="dropdown-item" href="{{ '/products/category/?category=skin-care' | url }}">Skin Care</a></li>
               </ul>
             </li>
             
@@ -70,10 +70,10 @@ at dummyjson.com/products/categories and automatically populate the categories a
                 Electronics & Tech
               </a>
               <ul class="dropdown-menu shadow nested-dropdown-menu" id="electronicsDropdownMenu" style="min-width: 180px;">
-                <li><a class="dropdown-item" href="/products/category/?category=smartphones">Smartphones</a></li>
-                <li><a class="dropdown-item" href="/products/category/?category=laptops">Laptops</a></li>
-                <li><a class="dropdown-item" href="/products/category/?category=tablets">Tablets</a></li>
-                <li><a class="dropdown-item" href="/products/category/?category=mobile-accessories">Mobile Accessories</a></li>
+                <li><a class="dropdown-item" href="{{ '/products/category/?category=smartphones' | url }}">Smartphones</a></li>
+                <li><a class="dropdown-item" href="{{ '/products/category/?category=laptops' | url }}">Laptops</a></li>
+                <li><a class="dropdown-item" href="{{ '/products/category/?category=tablets' | url }}">Tablets</a></li>
+                <li><a class="dropdown-item" href="{{ '/products/category/?category=mobile-accessories' | url }}">Mobile Accessories</a></li>
               </ul>
             </li>
             
@@ -90,9 +90,9 @@ at dummyjson.com/products/categories and automatically populate the categories a
                     Men's Fashion
                   </a>
                   <ul class="dropdown-menu shadow nested-dropdown-menu" id="mensFashionDropdownMenu" style="min-width: 160px;">
-                    <li><a class="dropdown-item" href="/products/category/?category=mens-shirts">Mens Shirts</a></li>
-                    <li><a class="dropdown-item" href="/products/category/?category=mens-shoes">Mens Shoes</a></li>
-                    <li><a class="dropdown-item" href="/products/category/?category=mens-watches">Mens Watches</a></li>
+                    <li><a class="dropdown-item" href="{{ '/products/category/?category=mens-shirts' | url }}">Mens Shirts</a></li>
+                    <li><a class="dropdown-item" href="{{ '/products/category/?category=mens-shoes' | url }}">Mens Shoes</a></li>
+                    <li><a class="dropdown-item" href="{{ '/products/category/?category=mens-watches' | url }}">Mens Watches</a></li>
                   </ul>
                 </li>
                 
@@ -102,17 +102,17 @@ at dummyjson.com/products/categories and automatically populate the categories a
                     Women's Fashion
                   </a>
                   <ul class="dropdown-menu shadow nested-dropdown-menu" id="womensFashionDropdownMenu" style="min-width: 160px;">
-                    <li><a class="dropdown-item" href="/products/category/?category=tops">Tops</a></li>
-                    <li><a class="dropdown-item" href="/products/category/?category=womens-dresses">Womens Dresses</a></li>
-                    <li><a class="dropdown-item" href="/products/category/?category=womens-shoes">Womens Shoes</a></li>
-                    <li><a class="dropdown-item" href="/products/category/?category=womens-bags">Womens Bags</a></li>
-                    <li><a class="dropdown-item" href="/products/category/?category=womens-watches">Womens Watches</a></li>
-                    <li><a class="dropdown-item" href="/products/category/?category=womens-jewellery">Womens Jewellery</a></li>
+                    <li><a class="dropdown-item" href="{{ '/products/category/?category=tops' | url }}">Tops</a></li>
+                    <li><a class="dropdown-item" href="{{ '/products/category/?category=womens-dresses' | url }}">Womens Dresses</a></li>
+                    <li><a class="dropdown-item" href="{{ '/products/category/?category=womens-shoes' | url }}">Womens Shoes</a></li>
+                    <li><a class="dropdown-item" href="{{ '/products/category/?category=womens-bags' | url }}">Womens Bags</a></li>
+                    <li><a class="dropdown-item" href="{{ '/products/category/?category=womens-watches' | url }}">Womens Watches</a></li>
+                    <li><a class="dropdown-item" href="{{ '/products/category/?category=womens-jewellery' | url }}">Womens Jewellery</a></li>
                   </ul>
                 </li>
                 
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="/products/category/?category=sunglasses">Sunglasses</a></li>
+                <li><a class="dropdown-item" href="{{ '/products/category/?category=sunglasses' | url }}">Sunglasses</a></li>
               </ul>
             </li>
             
@@ -122,9 +122,9 @@ at dummyjson.com/products/categories and automatically populate the categories a
                 Home & Living
               </a>
               <ul class="dropdown-menu shadow nested-dropdown-menu" id="homeDropdownMenu" style="min-width: 180px;">
-                <li><a class="dropdown-item" href="/products/category/?category=furniture">Furniture</a></li>
-                <li><a class="dropdown-item" href="/products/category/?category=home-decoration">Home Decoration</a></li>
-                <li><a class="dropdown-item" href="/products/category/?category=kitchen-accessories">Kitchen Accessories</a></li>
+                <li><a class="dropdown-item" href="{{ '/products/category/?category=furniture' | url }}">Furniture</a></li>
+                <li><a class="dropdown-item" href="{{ '/products/category/?category=home-decoration' | url }}">Home Decoration</a></li>
+                <li><a class="dropdown-item" href="{{ '/products/category/?category=kitchen-accessories' | url }}">Kitchen Accessories</a></li>
               </ul>
             </li>
             
@@ -134,8 +134,8 @@ at dummyjson.com/products/categories and automatically populate the categories a
                 Vehicles & Transportation
               </a>
               <ul class="dropdown-menu shadow nested-dropdown-menu" id="vehiclesDropdownMenu" style="min-width: 180px;">
-                <li><a class="dropdown-item" href="/products/category/?category=vehicle">Vehicle</a></li>
-                <li><a class="dropdown-item" href="/products/category/?category=motorcycle">Motorcycle</a></li>
+                <li><a class="dropdown-item" href="{{ '/products/category/?category=vehicle' | url }}">Vehicle</a></li>
+                <li><a class="dropdown-item" href="{{ '/products/category/?category=motorcycle' | url }}">Motorcycle</a></li>
               </ul>
             </li>
             
@@ -145,8 +145,8 @@ at dummyjson.com/products/categories and automatically populate the categories a
                 Other
               </a>
               <ul class="dropdown-menu shadow nested-dropdown-menu" id="otherCategoriesDropdownMenu" style="min-width: 180px;">
-                <li><a class="dropdown-item" href="/products/category/?category=groceries">Groceries</a></li>
-                <li><a class="dropdown-item" href="/products/category/?category=sports-accessories">Sports Accessories</a></li>
+                <li><a class="dropdown-item" href="{{ '/products/category/?category=groceries' | url }}">Groceries</a></li>
+                <li><a class="dropdown-item" href="{{ '/products/category/?category=sports-accessories' | url }}">Sports Accessories</a></li>
               </ul>
             </li>
           </ul>
@@ -158,9 +158,9 @@ at dummyjson.com/products/categories and automatically populate the categories a
             About
           </a>
           <ul class="dropdown-menu shadow nested-dropdown-menu" id="aboutDropdownMenu" style="min-width: 200px;">
-            <li><a class="dropdown-item disabled" href="/under_construction">Our Story</a></li>
-            <li><a class="dropdown-item disabled" href="/under_construction">Contact Us</a></li>
-            <li><a class="dropdown-item disabled" href="/under_construction">FAQ</a></li>
+            <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Our Story</a></li>
+            <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Contact Us</a></li>
+            <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">FAQ</a></li>
             
             <!-- Legal with sub-options -->
             <li class="dropdown dropend position-relative">
@@ -168,11 +168,11 @@ at dummyjson.com/products/categories and automatically populate the categories a
                 Legal
               </a>
               <ul class="dropdown-menu shadow nested-dropdown-menu" id="legalDropdownMenu" style="min-width: 180px;">
-                <li><a class="dropdown-item disabled" href="/under_construction">Terms of Service</a></li>
-                <li><a class="dropdown-item disabled" href="/under_construction">Privacy Policy</a></li>
-                <li><a class="dropdown-item disabled" href="/under_construction">Cookie Policy</a></li>
-                <li><a class="dropdown-item disabled" href="/under_construction">Refund Policy</a></li>
-                <li><a class="dropdown-item disabled" href="/under_construction">Shipping Policy</a></li>
+                <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Terms of Service</a></li>
+                <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Privacy Policy</a></li>
+                <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Cookie Policy</a></li>
+                <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Refund Policy</a></li>
+                <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Shipping Policy</a></li>
               </ul>
             </li>
           </ul>
@@ -199,7 +199,7 @@ at dummyjson.com/products/categories and automatically populate the categories a
             Help
           </a>
           <ul class="dropdown-menu shadow nested-dropdown-menu" id="helpDropdownMenu" style="min-width: 200px;">
-            <li><a class="dropdown-item disabled" href="/under_construction">Help Center</a></li>
+            <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Help Center</a></li>
             
             <!-- Customer Service with sub-options -->
             <li class="dropdown dropend position-relative">
@@ -214,21 +214,21 @@ at dummyjson.com/products/categories and automatically populate the categories a
                     Contact Support
                   </a>
                   <ul class="dropdown-menu shadow nested-dropdown-menu" id="contactSupportDropdownMenu" style="min-width: 180px;">
-                    <li><a class="dropdown-item disabled" href="/under_construction">Technical Issues</a></li>
-                    <li><a class="dropdown-item disabled" href="/under_construction">Order Problems</a></li>
-                    <li><a class="dropdown-item disabled" href="/under_construction">Return Request</a></li>
-                    <li><a class="dropdown-item disabled" href="/under_construction">Product Questions</a></li>
+                    <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Technical Issues</a></li>
+                    <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Order Problems</a></li>
+                    <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Return Request</a></li>
+                    <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Product Questions</a></li>
                   </ul>
                 </li>
                 
-                <li><a class="dropdown-item disabled" href="/under_construction">Live Chat</a></li>
-                <li><a class="dropdown-item disabled" href="/under_construction">Email Us</a></li>
-                <li><a class="dropdown-item disabled" href="/under_construction">Call Us</a></li>
+                <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Live Chat</a></li>
+                <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Email Us</a></li>
+                <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Call Us</a></li>
               </ul>
             </li>
             
-            <li><a class="dropdown-item disabled" href="/under_construction">Track Order</a></li>
-            <li><a class="dropdown-item disabled" href="/under_construction">Returns</a></li>
+            <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Track Order</a></li>
+            <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Returns</a></li>
           </ul>
         </li>
         
@@ -288,21 +288,21 @@ at dummyjson.com/products/categories and automatically populate the categories a
                 Account Settings
               </a>
               <ul class="dropdown-menu shadow nested-dropdown-menu" id="accountSettingsDropdownMenu" style="min-width: 180px;">
-                <li><a class="dropdown-item" href="/login">Login</a></li>
-                <li><a class="dropdown-item disabled" href="/under_construction">Edit Profile</a></li>
-                <li><a class="dropdown-item disabled" href="/under_construction">Change Password</a></li>
-                <li><a class="dropdown-item disabled" href="/under_construction">Email Preferences</a></li>
-                <li><a class="dropdown-item disabled" href="/under_construction">Notifications</a></li>
-                <li><a class="dropdown-item disabled" href="/under_construction">Privacy Settings</a></li>
+                <li><a class="dropdown-item" href="{{ '/login' | url }}">Login</a></li>
+                <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Edit Profile</a></li>
+                <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Change Password</a></li>
+                <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Email Preferences</a></li>
+                <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Notifications</a></li>
+                <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Privacy Settings</a></li>
               </ul>
             </li>
             
-            <li><a class="dropdown-item disabled" href="/under_construction">Account Details</a></li>
-            <li><a class="dropdown-item disabled" href="/under_construction">Order History</a></li>
-            <li><a class="dropdown-item disabled" href="/under_construction">Saved Items</a></li>
-            <li><a class="dropdown-item disabled" href="/under_construction">Addresses</a></li>
-            <li><a class="dropdown-item disabled" href="/under_construction">Payment Methods</a></li>
-            <li><a class="dropdown-item" href="/under_construction">Logout</a></li>
+            <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Account Details</a></li>
+            <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Order History</a></li>
+            <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Saved Items</a></li>
+            <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Addresses</a></li>
+            <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Payment Methods</a></li>
+            <li><a class="dropdown-item" href="{{ '/under_construction' | url }}">Logout</a></li>
           </ul>
         </li>
         
@@ -319,9 +319,9 @@ at dummyjson.com/products/categories and automatically populate the categories a
                 View Cart
               </a>
               <ul class="dropdown-menu shadow nested-dropdown-menu" id="viewCartDropdownMenu" style="min-width: 180px;">
-                <li><a class="dropdown-item" href="/cart">All Items</a></li>
-                <li><a class="dropdown-item" href="/cart">Recently Added</a></li>
-                <li><a class="dropdown-item" href="/under_construction">Saved for Later</a></li>
+                <li><a class="dropdown-item" href="{{ '/cart' | url }}">All Items</a></li>
+                <li><a class="dropdown-item" href="{{ '/cart' | url }}">Recently Added</a></li>
+                <li><a class="dropdown-item" href="{{ '/under_construction' | url }}">Saved for Later</a></li>
                 <li><a class="dropdown-item" id="cart-remove-all">Remove All</a></li>
               </ul>
             </li>
@@ -332,15 +332,15 @@ at dummyjson.com/products/categories and automatically populate the categories a
                 Checkout
               </a>
               <ul class="dropdown-menu shadow nested-dropdown-menu" id="checkoutDropdownMenu" style="min-width: 180px;">
-                <li><a class="dropdown-item" href="/checkout">Express Checkout</a></li>
-                <li><a class="dropdown-item disabled" href="/under_construction">Payment Methods</a></li>
-                <li><a class="dropdown-item disabled" href="/under_construction">Shipping Options</a></li>
-                <li><a class="dropdown-item disabled" href="/under_construction">Apply Coupon</a></li>
-                <li><a class="dropdown-item disabled" href="/under_construction">Gift Options</a></li>
+                <li><a class="dropdown-item" href="{{ '/checkout' | url }}">Express Checkout</a></li>
+                <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Payment Methods</a></li>
+                <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Shipping Options</a></li>
+                <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Apply Coupon</a></li>
+                <li><a class="dropdown-item disabled" href="{{ '/under_construction' | url }}">Gift Options</a></li>
               </ul>
             </li>
             
-            <li><a class="dropdown-item" href="/under_construction">Wishlist</a></li>
+            <li><a class="dropdown-item" href="{{ '/under_construction' | url }}">Wishlist</a></li>
           </ul>
         </li>
       </ul>

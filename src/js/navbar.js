@@ -29,12 +29,12 @@ $(() => {
     const query = $('#search-input').val().trim();
         
     if (query) {
-      window.location.href = `/products/search/?query=${encodeURIComponent(query)}`;
+      window.location.href = `/bad_ui/products/search/?query=${encodeURIComponent(query)}`;
     }
   });
 
   $("#cart-remove-all").on("click", () => {
     window.localStorage.clear();
-    window.location.href = "/cart";
+    window.location.href = "/bad_ui/cart";
   })
 });
