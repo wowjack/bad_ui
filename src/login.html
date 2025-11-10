@@ -1,0 +1,25 @@
+---
+layout: layout.html
+title: Login
+---
+<link rel="stylesheet" href="/css/login.css"/>
+<script type="module" src="/js/login.js"></script>
+
+
+<div id="login-form-container">
+    <form id="login-form">
+        <input class="login-form-control" id="login-username-input" placeholder="username"/>
+        <input class="login-form-control" id="login-password-input" placeholder="password"/>
+        <button class="btn btn-primary login-form-control" type="submit">Login</button>
+    </form>
+</div>
+
+<div class="modal fade" id="login-modal" aria-hidden="true" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body" id="login-modal-body">
+        <p>Welcome <p id="login-modal-username"></p></p>
+      </div>
+    </div>
+  </div>
+</div>

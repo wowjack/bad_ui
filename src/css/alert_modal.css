@@ -1,0 +1,41 @@
+.alert-modal-dialog {
+  max-width: 120px !important;
+  width: 120px !important;
+  margin: 0 auto !important;
+}
+
+.alert-modal-content {
+  overflow: visible;
+  font-size: 75% !important;
+}
+
+.alert-modal-header {
+  background: white;
+  border-bottom: 0;
+  padding: 10px 5px;
+}
+
+.alert-modal-title {
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.alert-modal-body {
+  line-height: 1.2;
+  padding: 10px 5px;
+  word-break: break-all;
+}
+
+.alert-modal-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  border-top: 1px solid #dee2e6;
+  padding: 10px 5px;
+}
+
+#alertModalLabel {
+  font-weight: 5000;
+}

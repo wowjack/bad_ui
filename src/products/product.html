@@ -1,0 +1,59 @@
+---
+layout: layout.html
+title: Product Details
+---
+
+<div class="container">
+  <div id="product-detail">
+    <div class="product-header">
+      <h1 id="product-title"></h1>
+      <p id="product-price"></p>
+    </div>
+
+    <img src="" id="product-image">
+
+    <div class="product-info">
+      <p id="product-description"></p>
+      
+      <div class="product-details">
+        <div>
+            <span id="product-stock"></span>
+        </div>
+        <div>
+          <span>Weight:</span>
+          <span id="product-weight"></span>
+        </div>
+        <div>
+          <span>Dimensions:</span>
+          <span id="product-dimensions"></span>
+        </div>
+        <div>
+          <span>Warranty:</span>
+          <span id="product-warranty"></span>
+        </div>
+        <div>
+          <span>Shipping:</span>
+          <span id="product-shipping"></span>
+        </div>
+        <div>
+          <span>Return Policy:</span>
+          <span id="product-return"></span>
+        </div>
+      </div>
+      
+      <div class="product-actions">
+        <button class="btn btn-primary" id="add-to-cart-btn">
+          Add to Cart
+        </button>
+        <a class="btn btn-outline-secondary" href="/under_construction">
+          Add to Wishlist
+        </a>
+      </div>
+    </div>
+
+    <div id="reviews-container"></div>
+  </div>
+</div>
+
+<script src="/js/products_product.js"></script>
+<link rel="stylesheet" href="/css/product.css">

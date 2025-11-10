@@ -1,0 +1,13 @@
+
+#product-image {
+    width: 70vw;
+}
+
+
+.product-header, .product-info, #reviews-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: fit-content;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 1em;
+}
