@@ -26,7 +26,7 @@ export function renderProducts(products) {
             <h6 class="card-title">${p.title}</h6>
             <p class="text-muted mb-1">$${p.price}</p>
             <p class="small flex-grow-1">${p.description}</p>
-            <a href="/bad_ui/products/product/?id=${p.id}" class="btn btn-outline-primary mt-auto">View</a>
+            <a href="/bad_ui/products/product/?id=${p.id}" id="view-product-button" class="btn btn-outline-secondary mt-auto">View</a>
           </div>
         </div>
       </div>
