@@ -1,0 +1,49 @@
+.ad-modal-dialog {
+  max-width: 500px;
+}
+
+.ad-modal-header {
+  color: rgb(0, 0, 0);
+  border-bottom: none;
+}
+
+.ad-modal-header .modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.ad-modal-body {
+  padding: 0;
+  background: #f8f9fa;
+}
+
+.modal-ad-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.ad-modal-footer .btn {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+}
+
+.ad-modal-footer {
+  display: flex;
+  justify-content: space-between !important;
+}
+
+
+#ad-modal-dismiss {
+  color: rgb(240, 240, 240);
+  border-color: rgb(240, 240, 240);
+}
+
+#ad-modal-dismiss {
+  transform: none !important;
+  box-shadow: none !important;
+  background-color: inherit !important;
+  border-color: inherit !important;
+  opacity: 1 !important;
+}

@@ -1,0 +1,51 @@
+body {
+    background-color: #f8f9fa;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/5/5b/Marylebone_High_Street_12_Sept._2015.JPG);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+p {
+    font-size: 200%;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.product-card {
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+}
+
+.product-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+* {
+  cursor: default !important;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.75) !important;
+}
+
+* {
+  font-family: 'Schoolbell', cursive !important;
+}
+
+body {
+  font-family: 'Schoolbell', cursive;
+}
+
+#info-header {
+    background-color: #f8f9fa;
+    text-align: right;
+}

@@ -1,0 +1,47 @@
+#checkout-container {
+  padding: 20px 0;
+}
+
+.checkout-step {
+  margin-bottom: 10px;
+  padding-bottom: 50px;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 75%;
+  text-align: right;
+}
+
+.form-group-right label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.form-group-right input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+
+
+.form-group-right p {
+  width: 100%;
+  margin: 10px 0;
+}
+
+
+#order-success-message {
+    color: red
+}

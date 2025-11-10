@@ -1,0 +1,29 @@
+/* Sidebar Ad Styles */
+.left-sidebar, .right-sidebar {
+  padding: 20px 10px;
+}
+
+.ad-sidebar {
+  position: sticky;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+  align-self: flex-start;
+}
+
+.ad-item {
+  width: 100%;
+  max-width: 40vw;
+  border: 2px solid;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+
+.ad-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
